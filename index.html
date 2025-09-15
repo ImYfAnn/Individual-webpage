@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="#home" class="visually-hidden-focusable">Skip to content</a>
+
+    <header>
+      <nav class="nav">
+        <div class="nav__brand">My Portfolio</div>
+        <ul class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle color theme">
+          <span class="theme-toggle__icon" aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="home" class="container">
+      <section aria-labelledby="home-heading" class="hero" role="banner">
+        <div class="hero__media">
+          <figure class="avatar" aria-label="Profile avatar" title="Profile">
+            <img src="images/avatar.png" alt="Profile avatar" onerror="this.remove()" />
+            <span aria-hidden="true">M</span>
+          </figure>
+        </div>
+        <div class="hero__content">
+          <h1 id="home-heading">Hi, I'm <span class="highlight">Maddy</span></h1>
+          <p class="typewriter">I'm <span id="typewriter"></span></p>
+          <p class="lead">I'm looking to start afresh my <span class="highlight">AI journey</span> in order to achieve the <span class="highlight">impossible</span>!</p>
+          <div class="cta">
+            <a class="btn" href="#about">About Me</a>
+            <a class="btn btn--ghost" href="#contact">Hire Me</a>
+            <button class="btn" id="download-resume" type="button">Download Résumé (PDF)</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-heading" class="about">
+        <h2 id="about-heading">About Me</h2>
+        <p class="about__bio">
+          I'm from a customer support background focused on learning AI in the smartest and quickest way possible
+          thanks to BE10X. I enjoy working with modern tooling,
+          bringing designs to life,  and delivering products that users love.
+        </p>
+
+        <h3 class="about__subheading">Skills</h3>
+        <ul class="skills" role="list">
+          <li class="skill-item">
+            <div class="skill-chip">Multi-tasking with AI</div>
+            <div class="skill-thumbnail">
+              <img src="images/ai-multitasking.jpg.jpg" alt="AI Multi-tasking" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Senior level IR handling</div>
+            <div class="skill-thumbnail">
+              <img src="images/ir-handling.jpg" alt="IR Handling" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Expertise in Sales</div>
+            <div class="skill-thumbnail">
+              <img src="images/Sales.jpg" alt="Sales Expertise" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Handling ecommerce communication & transactions</div>
+            <div class="skill-thumbnail">
+              <img src="images/Ecommerce.jpg" alt="Ecommerce" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Mastering use of AI for ease of managing given task</div>
+            <div class="skill-thumbnail">
+              <img src="images/AI Mastering.jpg" alt="AI Mastery" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Content Writing - Ideas</div>
+            <div class="skill-thumbnail">
+              <img src="images/Content Writing.jpg" alt="Content Writing" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Meeting SLA's & KPI's, exceeding on occasions</div>
+            <div class="skill-thumbnail">
+              <img src="images/SLA.jpg" alt="SLA KPI" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Research and Development (Starting level)</div>
+            <div class="skill-thumbnail">
+              <img src="images/Research.jpg" alt="Research Development" onerror="this.style.display='none'">
+            </div>
+          </li>
+          <li class="skill-item">
+            <div class="skill-chip">Creative capabilities (Acting, Singing etc) (Aim to carry out other profession related work even if behind the scenes)</div>
+            <div class="skill-thumbnail">
+              <img src="images/Sing and Act.jpg" alt="Creative Capabilities" onerror="this.style.display='none'">
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+
+      <section id="contact" aria-labelledby="contact-heading" class="contact">
+        <h2 id="contact-heading">Contact me as per resume, do not fill form below</h2>
+        <p class="contact__hint">Hover or focus this section to expand the form.</p>
+
+        <div class="contact__layout">
+          <aside class="contact__sidebar" aria-label="Contact information">
+            <h3 class="contact__sidebar-title">Reach me</h3>
+            <address class="contact__address">
+              <p>
+                <a href="mailto:you@example.com" class="contact__link">you@example.com</a><br/>
+                <a href="tel:+1234567890" class="contact__link">+1 (234) 567-890</a>
+              </p>
+            </address>
+            <nav aria-label="Social profiles">
+              <ul class="contact__social" role="list">
+                <li>
+                  <a href="#" aria-label="LinkedIn" class="contact__icon" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3zM14.5 9c-2.2 0-3.2 1.2-3.8 2V9H7v12h3.7v-6.5c0-1.7.3-3.4 2.5-3.4s2.2 1.9 2.2 3.5V21H19v-6.9c0-3.3-1.8-5.1-4.5-5.1Z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="GitHub" class="contact__icon" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.2 11.1.6.1.8-.3.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 2.1 2.9 1.6.1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.2-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.8-2.8 5.7-5.4 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.8-1.5 8.2-5.9 8.2-11.1A11.5 11.5 0 0 0 12 .5Z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="Twitter" class="contact__icon" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M18.9 2H21l-6.6 7.5L22 22h-6.8l-5.3-6.9L3.8 22H2l7.1-8-7-9.9h6.9l4.8 6.4L18.9 2Zm-1.2 18h1.8L8.5 4H6.7l11 16Z"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <form class="contact__form" action="#" method="post" novalidate>
+            <div class="grid">
+              <label class="field">
+                <span class="label">Full name</span>
+                <input class="input" type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label class="field">
+                <span class="label">Email</span>
+                <input class="input" type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label class="field span-2">
+                <span class="label">Subject</span>
+                <input class="input" type="text" name="subject" placeholder="What is this about?" required />
+              </label>
+              <label class="field span-2">
+                <span class="label">Message</span>
+                <textarea class="input textarea" name="message" rows="5" placeholder="Write your message..." required></textarea>
+              </label>
+              <label class="consent span-2">
+                <input type="checkbox" name="consent" />
+                <span>I agree to be contacted back about my inquiry.</span>
+              </label>
+            </div>
+            <div class="contact__actions">
+              <button type="submit" class="btn" disabled>Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <small>© <span id="year"></span> My Portfolio. All rights reserved.</small>
+        <ul class="social" role="list" aria-label="Social links">
+          <li>
+            <a href="#" aria-label="GitHub" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.2 11.1.6.1.8-.3.8-.6v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.9 2.1 2.9 1.6.1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.2-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.8-2.8 5.7-5.4 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6 4.8-1.5 8.2-5.9 8.2-11.1A11.5 11.5 0 0 0 12 .5Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5ZM3 9h4v12H3zM14.5 9c-2.2 0-3.2 1.2-3.8 2V9H7v12h3.7v-6.5c0-1.7.3-3.4 2.5-3.4s2.2 1.9 2.2 3.5V21H19v-6.9c0-3.3-1.8-5.1-4.5-5.1Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="X (Twitter)" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M18.9 2H21l-6.6 7.5L22 22h-6.8l-5.3-6.9L3.8 22H2l7.1-8-7-9.9h6.9l4.8 6.4L18.9 2Zm-1.2 18h1.8L8.5 4H6.7l11 16Z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5ZM18 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-YcsIPZc9iGg1WwPjYf7Xo6lXo5QbQK2e6hBrvM3N9q8mKz2Qp1WJvR9n1g9t7Y3u2b6VQ0pYw1m1yZ3xQjC2aA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
