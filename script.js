@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Typewriter effect
   const el = document.getElementById('typewriter');
   if (el) {
-    const words = ["Work from Home Professional", "The Creator of this website you are currently on", "Currently enrolled in BE10X course to upgrade my AI skills"];
+    const words = ["Work from Home Professional", "The Creator of this website you are currently on", "Looking to start working with immediate effect, part-time or full-time"];
     let wordIndex = 0;
     let charIndex = 0;
     let deleting = false;
@@ -183,5 +183,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
-
 
