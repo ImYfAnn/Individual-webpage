@@ -209,7 +209,7 @@ a:hover {
 /* Hero */
 .hero {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 160px minmax(0, 1fr);
   align-items: center;
   gap: 2rem;
   padding: 3rem 1.25rem 2rem;
@@ -241,14 +241,15 @@ a:hover {
 .hero__content .lead {
   color: #cbd5e1;
   max-width: 80ch;
-  margin-left: 2%;
+  margin-inline: auto;
   font-size: clamp(0.85rem, 1vw + 0.4rem, 1rem);
-  white-space: nowrap;
+  white-space: normal;
 }
-.hero__content { text-align: center; margin-inline: auto; margin-left: 0.5%; }
+.hero__content { min-width: 0; text-align: center; margin-inline: auto; }
 .hero__content .highlight { color: #facc15; font-weight: 700; }
 
 .typewriter {
+  min-height: 1.5em;
   margin: 0.25rem 0 0.5rem;
   font-size: clamp(1rem, 1.2vw + .6rem, 1.25rem);
   color: var(--muted);
@@ -256,8 +257,12 @@ a:hover {
 #typewriter {
   border-right: 2px solid currentColor;
   padding-right: 2px;
-  white-space: nowrap;
-  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .typewriter {
+    min-height: 3em;
+  }
 }
 
 /* Brighter, higher-contrast hero for light (bright) mode */
@@ -747,5 +752,4 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
-
 
