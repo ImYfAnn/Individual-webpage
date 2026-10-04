@@ -209,7 +209,7 @@ a:hover {
 /* Hero */
 .hero {
   display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
   gap: 2rem;
   padding: 3rem 1.25rem 2rem;
@@ -221,6 +221,7 @@ a:hover {
 .avatar {
   height: 160px;
   width: 160px;
+  margin: 0 auto;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -245,7 +246,7 @@ a:hover {
   font-size: clamp(0.85rem, 1vw + 0.4rem, 1rem);
   white-space: normal;
 }
-.hero__content { min-width: 0; text-align: center; margin-inline: auto; }
+.hero__content { width: 100%; min-width: 0; text-align: center; }
 .hero__content .highlight { color: #facc15; font-weight: 700; }
 
 .typewriter {
@@ -262,6 +263,12 @@ a:hover {
 @media (max-width: 900px) {
   .typewriter {
     min-height: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  .typewriter {
+    min-height: 6em;
   }
 }
 
@@ -283,6 +290,7 @@ a:hover {
 .avatar-link:hover { color: #bfdbfe; text-decoration: underline; }
 .cta {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
   justify-content: center;
@@ -373,13 +381,6 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 720px) {
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .avatar {
-    margin: 0 auto;
-  }
   .cta {
     justify-content: center;
   }
@@ -752,4 +753,3 @@ html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
-
