@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.error('Error downloading PDF:', error);
       // Fallback to opening in new tab
-      window.open('resume.html', '_blank');
+      window.open('Madiha-Chaudhary-Resume.pdf', '_blank');
       
       // Reset button
       buttonElement.textContent = originalText;
@@ -183,4 +183,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
-
